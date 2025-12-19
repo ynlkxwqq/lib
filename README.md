@@ -1,80 +1,26 @@
-# Library Management System
-A web application which can manage various tasks in library for both admins and students.
+# Lama Dev School Management Dashboard
 
+## Getting Started
 
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Features
-- The system consists of two types of users: admins and students.
-- Each user should have an account.
-- The application provides signup, login and logout functionalities.
-- A book can have multiple copies so that copies of same book can be issued to multiple students.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Admin Features
-- Admins can view, add, update or delete the books.
-- Admins can view all the students who have an account in the system.
-- Admins can keep track of all the activities of library.
-- Admins can issue book to a student.
-- Admins can collect book from a student.
-- Admins can view all the current loans.
-- Admins can also view the past loans against which the books have been returned.
-- Admins can send the email as reminders to the students.
-- Admins can update their profile.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Student Features
-- Students can view all the books in the library.
-- students can keep track of all their activities.
-- Students can view all the books which they currently possess along with status (overdue or not).
-- Students can also view the books which they have already returned.
-- Students can update their profile.
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-## Technologies used
-- HTML
-- CSS
-- Bootstrap
-- Javascript
-- Node.js
-- Express.js
-- Mongodb
-- ejs
-
-## npm packages used
-- express
-- ejs
-- express-ejs-layouts
-- mongoose
-- express-session
-- bcryptjs
-- passport
-- passport-local
-- connect-flash
-- nodemailer
-- method-override
-- dotenv
-
-## Prerequisites
-For running the application:
-- Node.js must be installed on the system.
-- You should have a MongoDB database.
-- You should have a code editor (preferred: VS Code)
-
-## Installation and Setup
-1. Install all the dependencies
-	```sh
-	npm install
-	```
-2. Create a file named ".env" and enter the following credentials:
-	```js
-	MONGO_URI=your-mongo-uri
-	```
-3. Run the application
-	```sh
-	npm start
-	```
-4. Open http://localhost:5000
-5. You need to first signup and then login as admin or student to run the application.
-6. Admin signup page can't be accessed from the application. However, I have created a hidden route to access the page: `/auth/admin-signup`
-
-
-
+- [Lama Dev Youtube Channel](https://youtube.com/lamadev) 
+- [Next.js](https://nextjs.org/learn)
